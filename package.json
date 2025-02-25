@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.7.2",
+    "framer-motion": "^12.4.5",
+    "lucide-react": "^0.475.0",
+    "react-icons": "^5.4.0"
+  }
+}
