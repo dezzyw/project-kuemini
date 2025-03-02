@@ -1,0 +1,482 @@
+[
+    {
+        "_id": "642c155b2c4774f05c36eeaa",
+        "name": "Small Love",
+        "recipe": "Bento Cake (10x6 cm)",
+        "image": "/img/bento/foto1.png",
+        "category": "bento",
+        "price": "48.000"
+    },
+    {
+        "_id": "642c155b2c4774f05c36eeb9",
+        "name": "Rose White's",
+        "recipe": "Cake (14x6 cm)",
+        "image": "/img/cake/foto1.png",
+        "category": "cake",
+        "price": "60.000"
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee7c",
+        "name": "Strawberry",
+        "recipe": "Cake (14x6 cm)",
+        "image": "/img/cake/foto2.png",
+        "category": "cake",
+        "price": "70.000"
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee88",
+        "name": "Christmas",
+        "recipe": "Half Cake (14x6 cm)",
+        "image": "/img/half/foto1.png",
+        "category": "half",
+        "price": "50.000"
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee7a",
+        "name": "Tedy",
+        "recipe": "Half Cake (14x6 cm)",
+        "image": "/img/half/foto2.png",
+        "category": "half",
+        "price": "50.000"
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee74",
+        "name": "Number Cake",
+        "recipe": "Bento Cake (10x6 cm)",
+        "image": "/img/bento/foto3.png",
+        "category": "bento",
+        "price": "35.000"
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee712",
+        "name": "Piggy Ngok",
+        "recipe": "Bento Cake (10x6 cm)",
+        "image": "/img/bento/foto4.png",
+        "category": "bento",
+        "price": "50.000"
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee7x",
+        "name": "Pearl",
+        "recipe": "Cake (14x6 cm)",
+        "image": "/img/cake/foto3.png",
+        "category": "cake",
+        "price": "50.000"
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee8c",
+        "name": "Mini Ribbon",
+        "recipe": "Bento Cake (10x6 cm)",
+        "image": "/img/bento/foto5.png",
+        "category": "bento",
+        "price": "50.000"
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee94",
+        "name": "Pure Love",
+        "recipe": "Cake (14x6 cm)",
+        "image": "/img/cake/foto4.png",
+        "category": "cake",
+        "price": "80.000"
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee9e",
+        "name": "Classic",
+        "recipe": "Cake (14x6 cm)",
+        "image": "/img/cake/foto5.png",
+        "category": "cake",
+        "price": "55.000"
+    },
+    {
+        "_id": "642c155b2c4774f05c36eea6",
+        "name": "Moo Moo",
+        "recipe": "Half Cake (14x6 cm)",
+        "image": "/img/half/foto3.png",
+        "category": "half",
+        "price": "60.000"
+    },
+    {
+        "_id": "642c155b2c4774f05c36eeaf",
+        "name": "Kandang Sapi",
+        "recipe": "Half Cake (14x6 cm)",
+        "image": "/img/half/foto5.png",
+        "category": "half",
+        "price": "75.000"
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee89",
+        "name": "Heart Love",
+        "recipe": "Cake (14x6 cm)",
+        "image": "/img/cake/foto6.png",
+        "category": "cake",
+        "price": "60.000"
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee8a",
+        "name": "Basic Material",
+        "recipe": "Bento Cake (10x6 cm)",
+        "image": "/img/bento/foto6.png",
+        "category": "bento",
+        "price": "45.000"
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee96",
+        "name": "Momo Ribbon",
+        "recipe": "Bento Cake (10x6 cm)",
+        "image": "/img/bento/foto7.png",
+        "category": "bento",
+        "price": "50.000"
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee81",
+        "name": "Burgundy",
+        "recipe": "Cake (14x6 cm)",
+        "image": "/img/cake/foto7.png",
+        "category": "cake",
+        "price": "75.000"
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee84",
+        "name": "Ribbon",
+        "recipe": "Cake (14x6 cm)",
+        "image": "/img/cake/foto8.png",
+        "category": "cake",
+        "price": "90.000"
+    },
+    {
+        "_id": "642c155b2c4774f05c36eea4",
+        "name": "Kuereuni",
+        "recipe": "Half Cake (14x6 cm)",
+        "image": "/img/half/foto7.png",
+        "category": "half",
+        "price": "70.000"
+    },
+    {
+        "_id": "642c155b2c4774f05c36eea5",
+        "name": "White Bear's",
+        "recipe": "Half Cake (14x6 cm)",
+        "image": "/img/half/foto8.png",
+        "category": "half",
+        "price": "60.000"
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee87",
+        "name": "Gardeny",
+        "recipe": "Bento Cake (10x6 cm)",
+        "image": "/img/bento/foto8.png",
+        "category": "bento",
+        "price": "55.000"
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee83",
+        "name": "Aduh Gatel",
+        "recipe": "Bento Cake (10x6 cm)",
+        "image": "/img/bento/foto9.png",
+        "category": "bento",
+        "price": "65.000"
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee7f",
+        "name": "White Berry",
+        "recipe": "Cake (14x6 cm)",
+        "image": "/img/cake/foto9.png",
+        "category": "cake",
+        "price": "65.000"
+    },
+    {
+        "_id": "642c155b2c4774f05c36eea8",
+        "name": "Maroon",
+        "recipe": "Cake (14x6 cm)",
+        "image": "/img/cake/foto10.png",
+        "category": "cake",
+        "price": "80.000"
+    },
+    {
+        "_id": "642c155b2c4774f05c36eeba",
+        "name": "White Heart",
+        "recipe": "Cake (14x6 cm)",
+        "image": "/img/cake/foto11.png",
+        "category": "cake",
+        "price": "60.000"
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee80",
+        "name": "Pink Coquette",
+        "recipe": "Cake (14x6 cm)",
+        "image": "/img/cake/foto12.png",
+        "category": "cake",
+        "price": "80.000"
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee90",
+        "name": "Floral",
+        "recipe": "Half Cake (14x6 cm)",
+        "image": "/img/half/foto9.png",
+        "category": "half",
+        "price": "50.000"
+    },
+    {
+        "_id": "642c155b2c4774f05c36eeb0",
+        "name": "Hello Kitty",
+        "recipe": "Half Cake (14x6 cm)",
+        "image": "/img/half/foto10.png",
+        "category": "half",
+        "price": "60.000"
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee8d",
+        "name": "Lovely Birthday",
+        "recipe": "Bento Cake (10x6 cm)",
+        "image": "/img/bento/foto10.png",
+        "category": "bento",
+        "price": "60.000"
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee8e",
+        "name": "Simpley",
+        "recipe": "Bento Cake (10x6 cm)",
+        "image": "/img/bento/foto11.png",
+        "category": "bento",
+        "price": "50.000"
+    },
+    {
+        "_id": "642c155b2c4774f05c36eea7",
+        "name": "Cute Gradient",
+        "recipe": "Bento Cake (10x6 cm)",
+        "image": "/img/bento/foto11.png",
+        "category": "bento",
+        "price": "50.000"
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee99",
+        "name": "Coquette",
+        "recipe": "Half Cake (14x6 cm)",
+        "image": "/img/half/foto11.png",
+        "category": "half",
+        "price": "70.000"
+    },
+    {
+        "_id": "642c155b2c4774f05c36eeb3",
+        "name": "Rainbow",
+        "recipe": "Half Cake (14x6 cm)",
+        "image": "/img/half/foto12.png",
+        "category": "half",
+        "price": "80.000"
+    },
+    {
+        "_id": "642c155b2c4774f05c36eeb5",
+        "name": "Birthday",
+        "recipe": "Bento Cake (10x6 cm)",
+        "image": "/img/bento/foto2.png",
+        "category": "bento",
+        "price": "50.000"
+    },
+    {
+        "_id": "642c155b2c4774f05c36eeb6",
+        "name": "Twinny Tedy",
+        "recipe": "Half Cake (14x6 cm)",
+        "image": "/img/half/foto4.png",
+        "category": "half",
+        "price": "85.000"
+    },
+    {
+        "_id": "642c155b2c4774f05c36eeb8",
+        "name": "Beachy",
+        "recipe": "Half Cake (14x6 cm)",
+        "image": "/img/half/foto6.png",
+        "category": "half",
+        "price": "80.000"
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee7e",
+        "name": "Fish Parmentier",
+        "recipe": "Roasted duck breast (served pink) with gratin potato and a griottine cherry sauce",
+        "image": "/images/recipes/img1.png",
+        "category": "popular",
+        "price": 14.5
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee8b",
+        "name": "Chicken and Walnut Salad",
+        "recipe": "Pan roasted pork belly with gratin potato, braised Savoy cabbage, apples, thyme and calvados jus",
+        "image": "/images/recipes/img2.png",
+        "category": "dessert",
+        "price": 13.5
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee8f",
+        "name": "Chicken and Walnut Salad",
+        "recipe": "Pan roasted pork belly with gratin potato, braised Savoy cabbage, apples, thyme and calvados jus",
+        "image": "/images/recipes/img3.png",
+        "category": "dessert",
+        "price": 13.5
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee91",
+        "name": "Haddock",
+        "recipe": "Chargrilled fresh tuna steak (served medium rare) on classic Niçoise salad with French beans",
+        "image": "/images/recipes/img1.png",
+        "category": "dessert",
+        "price": 14.7
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee97",
+        "name": "Haddock",
+        "recipe": "Chargrilled fresh tuna steak (served medium rare) on classic Niçoise salad with French beans.",
+        "image": "/images/recipes/img2.png",
+        "category": "pizza",
+        "price": 14.7
+    },
+    {
+        "_id": "642c155b2c4774f05c36eea0",
+        "name": "Roasted Pork Belly",
+        "recipe": "Chargrilled chicken with avocado, baby gem lettuce, baby spinach, shallots, French beans, walnuts, croutons and a mustard dressing",
+        "image": "/images/recipes/img3.png",
+        "category": "pizza",
+        "price": 14.5
+    },
+    {
+        "_id": "642c155b2c4774f05c36eea9",
+        "name": "Fish Parmentier",
+        "recipe": "Sautéed breaded veal escalope with watercress, lemon and veal jus.",
+        "image": "/images/recipes/img1.png",
+        "category": "salad",
+        "price": 9.5
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee85",
+        "name": "Tuna Niçoise",
+        "recipe": "Warm goats cheese and roasted vegetable salad with black olive tapenade crostini",
+        "image": "/images/recipes/img2.png",
+        "category": "dessert",
+        "price": 10.5
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee93",
+        "name": "Tuna Niçoise",
+        "recipe": "Warm goats cheese and roasted vegetable salad with black olive tapenade crostini",
+        "image": "/images/recipes/img3.png",
+        "category": "pizza",
+        "price": 10.5
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee95",
+        "name": "Chicken and Walnut Salad",
+        "recipe": "Pan roasted pork belly with gratin potato, braised Savoy cabbage, apples, thyme and calvados jus",
+        "image": "/images/recipes/img1.png",
+        "category": "pizza",
+        "price": 13.5
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee9b",
+        "name": "Goats Cheese Pizza",
+        "recipe": "Roasted duck breast (served pink) with gratin potato and a griottine cherry sauce",
+        "image": "/images/recipes/img1.png",
+        "category": "pizza",
+        "price": 14.5
+    },
+    {
+        "_id": "642c155b2c4774f05c36eeb7",
+        "name": "Fish Parmentier",
+        "recipe": "Sautéed breaded veal escalope with watercress, lemon and veal jus.",
+        "image": "/images/recipes/img1.png",
+        "category": "soup",
+        "price": 9.5
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee9c",
+        "name": "Breton Fish Stew",
+        "recipe": "Chargrilled chicken with avocado, baby gem lettuce, baby spinach, shallots, French beans, walnuts, croutons and a mustard dressing",
+        "image": "/images/recipes/img1.png",
+        "category": "pizza",
+        "price": 12.9
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee9d",
+        "name": "Goats Cheese Pizza",
+        "recipe": "Roasted duck breast (served pink) with gratin potato and a griottine cherry sauce",
+        "image": "/images/recipes/img1.png",
+        "category": "pizza",
+        "price": 14.5
+    },
+    {
+        "_id": "642c155b2c4774f05c36eeac",
+        "name": "Roasted Pork Belly",
+        "recipe": "Chargrilled chicken with avocado, baby gem lettuce, baby spinach, shallots, French beans, walnuts, croutons and a mustard dressing",
+        "image": "/images/recipes/img1.png",
+        "category": "salad",
+        "price": 14.5
+    },
+    {
+        "_id": "642c155b2c4774f05c36eeb4",
+        "name": "Haddock",
+        "recipe": "Chargrilled fresh tuna steak (served medium rare) on classic Niçoise salad with French beans.",
+        "image": "/images/recipes/img1.png",
+        "category": "soup",
+        "price": 14.7
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee98",
+        "name": "Breton Fish Stew",
+        "recipe": "Chargrilled chicken with avocado, baby gem lettuce, baby spinach, shallots, French beans, walnuts, croutons and a mustard dressing",
+        "image": "/images/recipes/img1.png",
+        "category": "pizza",
+        "price": 12.9
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee82",
+        "name": "Escalope de Veau",
+        "recipe": "Pan roasted haddock fillet wrapped in smoked French bacon with pea purée and tomato and chive vinaigrette",
+        "image": "/images/recipes/img1.png",
+        "category": "offered",
+        "price": 12.5
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee86",
+        "name": "Escalope de Veau",
+        "recipe": "Pan roasted haddock fillet wrapped in smoked French bacon with pea purée and tomato and chive vinaigrette",
+        "image": "/images/recipes/img1.png",
+        "category": "dessert",
+        "price": 12.5
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee9a",
+        "name": "Breton Fish Stew",
+        "recipe": "Chargrilled chicken with avocado, baby gem lettuce, baby spinach, shallots, French beans, walnuts, croutons and a mustard dressing",
+        "image": "/images/recipes/img1.png",
+        "category": "pizza",
+        "price": 12.9
+    },
+    {
+        "_id": "642c155b2c4774f05c36eeab",
+        "name": "Goats Cheese Pizza",
+        "recipe": "Roasted duck breast (served pink) with gratin potato and a griottine cherry sauce",
+        "image": "/images/recipes/img1.png",
+        "category": "salad",
+        "price": 14.5
+    },
+    {
+        "_id": "642c155b2c4774f05c36eeb1",
+        "name": "Fish Parmentier",
+        "recipe": "Sautéed breaded veal escalope with watercress, lemon and veal jus.",
+        "image": "/images/recipes/img1.png",
+        "category": "soup",
+        "price": 9.5
+    },
+    {
+        "_id": "642c155b2c4774f05c36eead",
+        "name": "Roast Duck Breast",
+        "recipe": "Roasted duck breast (served pink) with gratin potato and a griottine cherry sauce",
+        "image": "/images/recipes/img1.png",
+        "category": "soup",
+        "price": 14.5
+    },
+    {
+        "_id": "642c155b2c4774f05c36eeae",
+        "name": "Tuna Niçoise",
+        "recipe": "Warm goats cheese and roasted vegetable salad with black olive tapenade crostini",
+        "image": "/images/recipes/img1.png",
+        "category": "soup",
+        "price": 10.5
+    }
+]
