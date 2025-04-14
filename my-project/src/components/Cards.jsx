@@ -1,37 +1,139 @@
-import React, { useState } from "react";
-import { FaHeart } from "react-icons/fa";
+import { FaHeart, FaShoppingCart } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import { FaShoppingCart } from "react-icons/fa";
+import { AuthContext } from "../contexts/AuthProvider";
+import React, { useState, useContext } from "react";
+import Swal from "sweetalert2";
 
+// Format harga ke mata uang Rupiah
+const formatRupiah = (number) => {
+  return new Intl.NumberFormat("id-ID", {
+    style: "currency",
+    currency: "IDR",
+    minimumFractionDigits: 0,
+  }).format(number);
+};
 
 const Cards = ({ item }) => {
+  const { name, image, price, recipe, id, oldPrice, discount } = item;
   const [isHeartFilled, setIsHeartFilled] = useState(false);
+  const { user } = useContext(AuthContext);
 
-  const handleHeartClick = () => {
-    setIsHeartFilled(!isHeartFilled);
+  const handleAddtoCart = (item) => {
+    if (user && user?.email) {
+      if (!item.id || !item.name || !item.price || !item.image) {
+        Swal.fire({
+          position: "center",
+          icon: "error",
+          title: "Data produk tidak lengkap",
+          showConfirmButton: true,
+        });
+        return;
+      }
+
+      const cartItem = {
+        id: item.id,
+        name: item.name,
+        quantity: 1,
+        image: item.image,
+        price: parseInt(item.price, 10),
+        email: user.email,
+      };
+
+      fetch("http://localhost:6001/carts", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(cartItem),
+      })
+        .then((res) => res.json())
+        .then((data) => {
+          if (data.success) {
+            Swal.fire({
+              position: "center",
+              icon: "success",
+              title: "Berhasil ditambahkan ke Keranjang!",
+              timer: 1500,
+              showConfirmButton: false,
+            });
+          } else {
+            Swal.fire({
+              position: "center",
+              icon: "error",
+              title: "Gagal menambahkan ke keranjang",
+              text: `${data.message || "Terjadi kesalahan"}`,
+              showConfirmButton: true,
+            });
+          }
+        })
+        .catch((error) => {
+          Swal.fire({
+            position: "center",
+            icon: "error",
+            title: "Kesalahan Server",
+            text: error.message,
+            showConfirmButton: true,
+          });
+        });
+    } else {
+      Swal.fire({
+        position: "center",
+        icon: "warning",
+        title: "Silakan login dahulu",
+        showConfirmButton: true,
+      });
+    }
   };
 
   return (
-    <div to={`/menu/${item._id}`} className="card shadow-xl relative mr-5 md:my-5">
-      <div
-        className={`absolute right-2 top-2 p-3 bg-[#FE8A8A] text-white w-10 h-10 flex items-center justify-center rounded-tr-[12px] rounded-bl-[12px] cursor-pointer transition-all duration-300`}
-        onClick={handleHeartClick}
-      >
-        <FaHeart className="w-5 h-5" />
+    <div className="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden relative p-6 transform hover:scale-105 mb-5">
+      {/* Gambar Produk */}
+      <div className="relative w-full h-[300px] mb-4">
+        <img
+          src={image}
+          alt={name}
+          className="w-full h-full object-cover rounded-xl"
+        />
+
+        {/* Badge Diskon */}
+        {discount && (
+          <span className="absolute top-3 left-3 bg-red-500 text-white px-2 py-1 text-xs font-bold rounded">
+            {discount}
+          </span>
+        )}
+
+        {/* Tombol Favorit */}
+        <button
+          className="absolute top-3 right-3 bg-[#FE8A8A] p-2 rounded-lg text-white shadow-md"
+          onClick={() => setIsHeartFilled(!isHeartFilled)}
+        >
+          <FaHeart className={`w-5 h-5 ${isHeartFilled ? "fill-current" : ""}`} />
+        </button>
       </div>
-      <Link to={`/menu/${item._id}`}>
-        <figure>
-          <img src={item.image} alt="Shoes" className="hover:scale-105 transition-all duration-300 md:h-72 rounded-sm" />
-        </figure>
-      </Link>
-      <div className="card-body">
-        <Link to={`/menu/${item._id}`}><h2 className="card-title text-[#FE8A8A]">{item.name}</h2></Link>
-        <p className="text-[#FE8A8A]">{item.recipe}</p>
-        <div className="card-actions justify-between items-center mt-2">
-          <h5 className="font-semibold text-[#FE8A8A]">
-            <span className="text-sm text-[#FE8A8A]">Rp </span> {item.price}
-          </h5>
-          <button className="btn bg-[#FE8A8A] text-white border-none"><FaShoppingCart /> </button>
+
+      {/* Detail Produk */}
+      <div>
+        <Link to={`/menu/${id}`}>
+          <h2 className="text-lg font-semibold text-[#FE8A8A] mb-2">{name}</h2>
+        </Link>
+        <p className="text-gray-500 mb-4">{recipe}</p>
+
+        {/* Harga & Tombol Keranjang */}
+        <div className="flex justify-between items-center">
+          <div>
+            <h5 className="font-semibold text-[#FE8A8A]">
+              {formatRupiah(price)}
+            </h5>
+            {oldPrice && (
+              <p className="text-sm text-gray-400 line-through">
+                {formatRupiah(oldPrice)}
+              </p>
+            )}
+          </div>
+          <button
+            className="bg-[#FE8A8A] p-3 rounded-lg text-white shadow-md"
+            onClick={() => handleAddtoCart(item)}
+          >
+            <FaShoppingCart />
+          </button>
         </div>
       </div>
     </div>

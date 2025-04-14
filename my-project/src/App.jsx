@@ -1,16 +1,18 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./pages/home/Home";
+import Profile from "./components/Profile";
+import BacaBlog from "./components/BacaBlog"; // import halaman baca blog
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <h1 className='bg-green' font-primary>hello developers</h1>
-    </>
-  )
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/profile" element={<Profile />} />
+        <Route path="/blog/:id" element={<BacaBlog />} /> {/* ini ditambah */}
+      </Routes>
+    </Router>
+  );
 }
 
-export default App
+export default App;

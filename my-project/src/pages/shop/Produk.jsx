@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react';
+import { useLocation } from 'react-router-dom';
 import Cards from "../../components/Cards"; // Sesuaikan path jika perlu
-import { FaFilter } from "react-icons/fa";
 
 const Produk = () => {
+    const location = useLocation();
     const [menu, setMenu] = useState([]);
     const [filteredItems, setFilteredItems] = useState([]);
     const [selectedCategory, setSelectedCategory] = useState("all");
@@ -13,19 +14,32 @@ const Produk = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await fetch("/menu.json");
+                const response = await fetch("http://localhost:6001/menu");
                 if (!response.ok) {
                     throw new Error("Network response was not ok");
                 }
                 const data = await response.json();
-                setMenu(data);
-                setFilteredItems(data);
+                // Menyaring data mulai dari item ke-4 (index 3)
+                setMenu(data.slice(3)); // Ambil data mulai dari index ke-3
+                setFilteredItems(data.slice(3)); // Ambil data mulai dari index ke-3
             } catch (error) {
                 console.error("Error fetching data", error);
             }
         };
         fetchData();
     }, []);
+
+    // Ambil kategori dari query URL jika ada
+    useEffect(() => {
+        const params = new URLSearchParams(location.search);
+        const categoryParam = params.get("category");
+
+        if (categoryParam) {
+            filterItems(categoryParam);
+        } else {
+            showAll();
+        }
+    }, [location.search, menu]);
 
     const filterItems = (category) => {
         const filtered = category === "all" ? menu : menu.filter((item) => item.category === category);
@@ -79,8 +93,13 @@ const Produk = () => {
                         <button onClick={() => filterItems("half")} className={selectedCategory === "half" ? "active" : ""}>Half Cake</button>
                     </div>
                     <div className='flex justify-end mb-4 rounded-sm mt-20'>
-                        
-                        <select name='sort' id='sort' onChange={(e) => handleSortChange(e.target.value)} value={sortOption} className='bg-[#EFEFEF] text-[#535353] px-2 py-1 rounded-sm'>
+                        <select
+                            name='sort'
+                            id='sort'
+                            onChange={(e) => handleSortChange(e.target.value)}
+                            value={sortOption}
+                            className='bg-[#EFEFEF] text-[#535353] px-2 py-1 rounded-sm'
+                        >
                             <option value="default">Default</option>
                             <option value="A-Z">A-Z</option>
                             <option value="Z-A">Z-A</option>
@@ -89,15 +108,21 @@ const Produk = () => {
                         </select>
                     </div>
                 </div>
+
                 <div className="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4">
                     {currentItems.map((item) => (
                         <Cards key={item._id} item={item} />
                     ))}
                 </div>
             </div>
+
             <div className="flex justify-center pb-10 pt-10">
                 {Array.from({ length: Math.ceil(filteredItems.length / itemsPerPage) }).map((_, index) => (
-                    <button key={index + 1} onClick={() => paginate(index + 1)} className={`mx-1 px-3 py-1 rounded-full ${currentPage === index + 1 ? "bg-[#FE8A8A] text-white" : "bg-gray-200"}`}>
+                    <button
+                        key={index + 1}
+                        onClick={() => paginate(index + 1)}
+                        className={`mx-1 px-3 py-1 rounded-full ${currentPage === index + 1 ? "bg-[#FE8A8A] text-white" : "bg-gray-200"}`}
+                    >
                         {index + 1}
                     </button>
                 ))}

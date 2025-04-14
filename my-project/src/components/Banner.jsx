@@ -1,7 +1,14 @@
 import React from 'react'
 import banner from '../../public/img/banner.png'
+import { useNavigate } from 'react-router-dom';
 
 const Banner = () => {
+  const navigate = useNavigate();
+  
+  const handleClick = () => {
+    navigate('/produk');
+  };
+
   return (
     <div className='section-container bg-gradient-to-r from-[#FE8A8A] from-0% to-[#FFDCD9] to-100%'>
       <div className='py-24 flex flex-col md:flex-row items-center justify-between gap-8'>
@@ -13,7 +20,7 @@ const Banner = () => {
           <p className='text-sm text-white/90 mt-2'>
             Kami menghadirkan roti ulang tahun yang tidak hanya lezat, tetapi juga dibuat khusus untuk melengkapi hari spesial Anda.
           </p>
-          <button className='btn bg-button px-8 py-3 font-semibold text-white rounded-full border-none mt-6'>
+          <button className='btn bg-button px-8 py-3 font-semibold text-white rounded-full border-none mt-6' onClick={handleClick}>
             Order Sekarang →
           </button>
         </div>
